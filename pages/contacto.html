@@ -11,6 +11,10 @@
     <script src="https://kit.fontawesome.com/80c879883e.js" crossorigin="anonymous"></script>
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,27 +35,36 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>    
         </nav>
-        <h1 class="animate__animated animate__heartBeat animate__infinite">Contacto</h1>
+        <h1 class="animate__animated animate__heartBeat animate__infinite strong">Contacto</h1>
     </header>
         
-    <main class="main">
-        <!-- Formulario -->
-        <section class="commentBox animate__animated animate__backInUp">
-            <h1>Queres contactarte con nosotros?</h1>
-            <p>Dejanos tu mensaje y te responderemos a la brevedad</p>
-            <div>
-                <form class="commentForm"  action="ejemplo.php" method="post">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" placeholder="Nombre:">
-                    <label for="mail"></label>
-                    <input type="email" id="mail" name="email" placeholder="Email:">
-                    <label for="msg"></label>
-                    <textarea rows="5" id="msg" name="msg" placeholder="Mensaje:"></textarea>
-                    <label><input class="submit" type="submit" value="Enviar"></label>
-                    <label><input class="reset" type="reset" name="Reset" value="restablecer" ></label>
-                </form>
-            </div>
-        </section>
+    <main class="main container-xxl row row-cols-lg-1 row-cols-md-1 m-auto w-100">
+
+            <form action="ejemplo.php" class="col-12 border border-4 my-4 d-flex flex-column justify-content-between">
+                    <h1 class="text-center my-4">Queres contactarte con nosotros?</h1>
+                    <p class="text-center">Dejanos tu mensaje y te responderemos a la brevedad</p>
+    
+                    <div class="form-floating w-75 m-auto">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Nombre:">
+                        <label for="floatingName">Nombre:</label>
+                      </div>
+    
+                    <div class="form-floating w-75 m-auto">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email:</label>
+                    </div>
+    
+                    <div class="form-floating w-75 m-auto">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                        <label for="floatingTextarea2">Mensaje:</label>
+                    </div>
+
+                    <div class="col-12 my-2 text-center ">
+                        <button class="btn btn-success" type="submit">Enviar</button>
+                        <button class="btn btn-danger" type="reset">Restablecer</button>
+                    </div> 
+    
+            </form>
         
     </main>
 
