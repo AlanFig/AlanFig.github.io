@@ -65,6 +65,7 @@ nav{
 }
 
 .cajaTexto{
+	overflow: hidden;
 	width: 90%;
 	color: #030303;
 	position: absolute;
@@ -93,6 +94,11 @@ nav{
 	border-radius: 5px;
 	position: relative;
 	text-transform: uppercase;
+}
+
+.cajaTexto-btn:hover{
+    transform: scale(1.2);
+    transition: all .5s;
 }
 
 nav .fa{
@@ -323,6 +329,7 @@ h3{
 /* Sub-Header */
 
 .sub-header{
+	overflow:  hidden;
 	height: 50vh;
 	width: 100%;
 	background-image: linear-gradient(rgba(231, 234, 241, 0.253),rgba(199, 211, 240, 0.274)),url(../images/principalManos.jpg);
@@ -513,6 +520,11 @@ h3{
 	border-radius: 50%;
 }
 
+.icon:hover{
+    transform: rotate(360deg) scale(1.2);
+    transition: all .5s;
+}
+
 #service p{
 	font-size: 14px;
 	margin-top: 20px;
@@ -545,6 +557,12 @@ h3{
     padding: 15px 0 25px;
 }
 
+
+.main{
+	display: flex;
+	justify-content: center;
+}
+
 /* Form */
 
 .commentBox{
@@ -567,6 +585,16 @@ h3{
 	border: none;
 	outline: none;
 	background: #f0f0f0;
+	font-weight: 700;
+}
+
+.submit:hover{
+	background-color: rgb(33, 170, 33);
+	color: white;
+}
+
+.reset:hover{
+	background-color: #f44336;
 }
 
 @media(max-width: 700px){
