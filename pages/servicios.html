@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Proyecto IntegrAR</title>
+    <script src="https://kit.fontawesome.com/80c879883e.js" crossorigin="anonymous"></script>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <!-- Header -->
+
+    <header class="sub-header">
+        <nav class="nav">
+            <a href="index.html"><img src="" alt=""></a>   <!-- Aqui iria el logo -->
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="">SERVICIOS</a></li>
+                    <li><a href="../pages/comunidad.html">COMUNIDAD</a></li>
+                    <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+        <h1>Servicios</h1>
+    </header>
+
+    <main>
+        <!-- Servicios -->
+
+        <section class="servicios">
+            <div class="row">
+                <div class="servicios-col">
+                    <h2>Servicios</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim ipsum excepturi architecto ipsa eos neque illo officia, necessitatibus blanditiis a provident hic non libero deserunt sequi magni quidem laboriosam cumque dolores fugiat molestiae! Aliquid fugit itaque facere, amet optio tempore quia eos quisquam pariatur est vitae mollitia, magni impedit exercitationem dicta sunt porro dolor incidunt placeat? Cum, quisquam vitae?</p>
+                </div>
+                <div class="nosotros-col">
+                    <img src="../images/imagenChicaDiversidad.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="serviciosBis">
+            <h1>Especificidades</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, accusantium?</p>
+
+            <div class="row">
+                <div class="serviciosBis-col">
+                    <img src="../images/sillaDeRuedas.jpg" alt="">
+                    <h3>Geolocalizacion</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam pariatur aut laborum voluptate qui itaque.</p>
+                </div>
+                <div class="serviciosBis-col">
+                    <img src="../images/sillaDeRuedas.jpg" alt="">
+                    <h3>Entorno</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam pariatur aut laborum voluptate qui itaque.</p>
+                </div>
+                <div class="serviciosBis-col">
+                    <img src="../images/sillaDeRuedas.jpg" alt="">
+                    <h3>Lectura</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam pariatur aut laborum voluptate qui itaque.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+    <!-- Call to action -->
+
+    <section class="cta">
+        <h2>Si deseas comunicarte con nosotros o hacernos una pregunta<br>Comunicate con nosotros</h2>
+        <a href="contacto.html" class="cajaTexto-btn">Contactanos</a>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>IntegrAR 2022 - Todos los derechos reservados</p>
+        <p>Hecho por Alan Figueroa</p>
+    </footer>
+
+    <!-- Javascript para el Menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
