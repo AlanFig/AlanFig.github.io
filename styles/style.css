@@ -98,6 +98,7 @@ nav{
 
 .cajaTexto-btn:hover{
     transform: scale(1.2);
+	color: #fff;
     transition: all .5s;
 }
 
@@ -323,6 +324,7 @@ h3{
 	color: black;
 	margin: 0 13px;
 	padding: 18px 0;
+	cursor: pointer;
 }
 
 
