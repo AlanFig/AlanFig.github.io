@@ -1,0 +1,16 @@
+@mixin cajaTexto {
+    display: inline-block;
+        text-decoration: none;
+        background: #1A1919;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: relative;
+        text-transform: uppercase;
+
+        &:hover{
+            transform: scale(1.2);
+            color: #fff;
+            transition: all .5s;
+        }
+}

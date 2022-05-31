@@ -1,0 +1,126 @@
+/* Servicios Index*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: $colorBlack;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    }
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .img-servicio{
+        height: 400px;
+        width: auto
+    }
+
+    .checklist-servicio{
+        width: 45%;
+
+        .service{
+            margin-bottom: 40px;
+
+            .n-service{
+                text-align: left;
+                margin-bottom: 7px;
+                color: $colorBlack;
+
+                .number{
+                    display: inline-block;
+                    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+                    width: 30px;
+                    height: 30px;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 50%;
+                    font-weight: 700;
+                    line-height: 30px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* principios Index*/
+
+.principios{
+	width: $w-80;
+	margin: auto;
+	text-align: center;
+	padding: 40px 0px;
+
+    h1{
+        color: black;
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 60px;
+    }
+
+    p{
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+
+        .principios-col{  
+            flex-basis: 31%;
+            background: rgba(51, 104, 238, 0.219);
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+
+            h3{
+                color: black;
+                text-align: center;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+        }
+        
+    }
+}
+
+/* Nosotros Index*/
+
+.nosotros{
+    width: $w-80;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom:  50px;
+
+    .nosotros-col{
+        flex-basis: 48%;
+        padding: 30px 2px;
+
+        img{
+            width: $w-100;
+        }
+
+        h2{
+            padding-top: 0;
+        }
+
+        p{
+            padding: 15px 0 25px;
+        }
+
+        .cajaTexto-btn{
+            @include cajaTexto
+        }
+    }
+}

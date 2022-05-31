@@ -1,0 +1,684 @@
+@media (max-width: 700px) {
+  .cajaTexto h1 {
+    font-size: 28px;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: center;
+  }
+  .nav-links {
+    position: absolute;
+    background: #2f4b6e;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
+@media (max-width: 700px) {
+  .contenedor-servicio {
+    display: block;
+    text-align: center;
+  }
+  .checklist-servicio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service h3 {
+    text-align: center;
+  }
+}
+
+/* principios Index*/
+@media (max-width: 700px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* Call to action */
+@media (max-width: 700px) {
+  .cta h2 {
+    font-size: 20px;
+  }
+}
+
+/* Testimonios */
+@media (max-width: 700px) {
+  .testimonios-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+
+/* Form */
+@media (max-width: 700px) {
+  .sub-header h1 {
+    font-size: 24px;
+  }
+  .commentBox {
+    width: 80%;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Servicios Index*/
+.subtitulo {
+  text-align: center;
+  font-weight: 300;
+  color: #030303;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.contenedor-servicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenedor-servicio .img-servicio {
+  height: 400px;
+  width: auto;
+}
+
+.contenedor-servicio .checklist-servicio {
+  width: 45%;
+}
+
+.contenedor-servicio .checklist-servicio .service {
+  margin-bottom: 40px;
+}
+
+.contenedor-servicio .checklist-servicio .service .n-service {
+  text-align: left;
+  margin-bottom: 7px;
+  color: #030303;
+}
+
+.contenedor-servicio .checklist-servicio .service .n-service .number {
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+/* principios Index*/
+.principios {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.principios h1 {
+  color: black;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.principios p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.principios .row {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.principios .row .principios-col {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  background: rgba(51, 104, 238, 0.219);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.principios .row .principios-col h3 {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Nosotros Index*/
+.nosotros {
+  width: 80%;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.nosotros .nosotros-col {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.nosotros .nosotros-col img {
+  width: 100%;
+}
+
+.nosotros .nosotros-col h2 {
+  padding-top: 0;
+}
+
+.nosotros .nosotros-col p {
+  padding: 15px 0 25px;
+}
+
+.nosotros .nosotros-col .cajaTexto-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1A1919;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nosotros .nosotros-col .cajaTexto-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/** Header **/
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(113, 138, 197, 0.219)), to(rgba(113, 138, 197, 0.226))), url(../images/principalManos.jpg);
+  background-image: linear-gradient(rgba(113, 138, 197, 0.219), rgba(113, 138, 197, 0.226)), url(../images/principalManos.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2% 6%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .nav-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.header nav .nav-links .fa {
+  display: none;
+}
+
+.header nav .nav-links ul {
+  padding: 30px;
+}
+
+.header nav .nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.header nav .nav-links li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header nav .nav-links li:hover::after {
+  width: 100%;
+}
+
+.header nav .nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.header nav .fa {
+  display: none;
+  color: black;
+  margin: 10px;
+  font-size: 22px;
+}
+
+.header .cajaTexto {
+  overflow: hidden;
+  width: 90%;
+  color: #030303;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header .cajaTexto h1 {
+  font-size: 60px;
+}
+
+.header .cajaTexto p {
+  margin: 10px 0 40px;
+  font-size: 16px;
+  color: #030303;
+}
+
+.header .cajaTexto .cajaTexto-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1A1919;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.header .cajaTexto .cajaTexto-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/* Sub-Header */
+.sub-header {
+  overflow: hidden;
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 234, 241, 0.253)), to(rgba(199, 211, 240, 0.274))), url(../images/principalManos.jpg);
+  background-image: linear-gradient(rgba(231, 234, 241, 0.253), rgba(199, 211, 240, 0.274)), url(../images/principalManos.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #030303;
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+}
+
+.sub-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2% 6%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-header nav .nav-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.sub-header nav .nav-links .fa {
+  display: none;
+}
+
+.sub-header nav .nav-links ul {
+  padding: 30px;
+}
+
+.sub-header nav .nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.sub-header nav .nav-links li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: black;
+  display: block;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sub-header nav .nav-links li:hover::after {
+  width: 100%;
+}
+
+.sub-header nav .nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sub-header nav .fa {
+  display: none;
+  color: black;
+  margin: 10px;
+  font-size: 22px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer .icons .fab {
+  color: black;
+  margin: 0 13px;
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+/* Form 
+Hecho con bootstrap*/
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0px;
+}
+
+/* Call to action */
+.cta {
+  margin: 80px auto;
+  width: 80%;
+  background-image: url(../images/cta2.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h2 {
+  color: #030303;
+  margin-bottom: 40px;
+}
+
+.cta .cajaTexto-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1A1919;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.cta .cajaTexto-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/* Servicios */
+.servicios {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.servicios .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.servicios .row .servicios-col {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  padding: 25px 2px;
+}
+
+.servicios .row .servicios-col h2 {
+  padding-top: 0;
+}
+
+.servicios .row .servicios-col p {
+  padding: 15px 0 25px;
+}
+
+.servicios .row .nosotros-col img {
+  width: 100%;
+}
+
+/* Comunidad */
+.comunidad {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.comunidad .comunidad-col {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.comunidad .comunidad-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.comunidad .comunidad-col p {
+  padding: 0;
+  text-align: center;
+}
+
+.comunidad .comunidad-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Testimonios */
+.testimonios {
+  width: 80%;
+  margin: auto;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.testimonios-col {
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonios-col img {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonios-col p {
+  padding: 0;
+}
+
+.testimonios-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonios-col .fa {
+  color: #f44336;
+}
+
+/* Servicios Bis Page */
+.serviciosBis {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* Servicios Prueba de banner */
+#services {
+  background-color: #dcdcdc;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+#services h1 {
+  text-align: center;
+  color: #030303;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+#services p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #030303;
+}
+
+#services .container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#services .container .icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+#services .container .icon:hover {
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#services .container .icon .iconos {
+  margin-top: 17px;
+}
+
+/* Nosotros Page */
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .nosotrosPage {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.main .nosotrosPage .nosotrosPage-col {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  padding: 20px 2px;
+}
+
+.main .nosotrosPage .nosotrosPage-col img {
+  width: 100%;
+}
+
+.main .nosotrosPage .nosotrosPage-col p {
+  padding: 15px 0 25px;
+}

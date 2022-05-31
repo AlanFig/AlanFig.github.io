@@ -1,0 +1,252 @@
+@import "../scss/utilites/variables";
+@import "../scss/utilites/functions";
+@import "../scss/utilites/mediaQ";
+@import "../scss/utilites/mixins";
+
+@import '../scss/base/reset';
+@import '../scss/base/typo';
+
+
+@import "../scss/views/home";
+@import '../scss/layout/navigation';
+@import '../scss/layout/grid';
+@import '../scss/layout/header';
+@import '../scss/layout/footer';
+@import '../scss/layout/forms';
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0px;
+}
+
+
+/* Call to action */
+
+.cta{
+    margin: 80px auto;
+    width: $w-80;
+    background-image: url(../images/cta2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+    h2{
+        color: $colorBlack;
+        margin-bottom: 40px;
+    }
+
+    .cajaTexto-btn{
+        @include cajaTexto
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Servicios */
+
+.servicios{
+    width: $w-80;
+    margin: auto;
+	padding-top: 40px;
+
+    .row{
+
+        display: flex;
+
+        .servicios-col{
+            flex-basis: 48%;
+            padding: 25px 2px;
+    
+            h2{
+                padding-top: 0;
+            }
+    
+            p{
+                padding: 15px 0 25px;
+            }
+        }
+    
+        .nosotros-col{
+            img{
+                width: $w-100;
+            }
+        }
+    }
+}
+
+/* Comunidad */
+
+.comunidad{
+	width: $w-80;
+	margin: auto;
+	text-align: center;
+	padding-top: 60px;
+
+    .comunidad-col{
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+    
+        img{
+            width: $w-100;
+            border-radius: 10px;
+        }
+    
+        p{
+            padding: 0;
+            text-align: center;
+        }
+    
+        h3{
+            margin-top: 16px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+/* Testimonios */
+
+.testimonios{
+	width: $w-80;
+	margin: auto;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.testimonios-col{
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: #fff3f3;
+	padding: 25px;
+	display: flex;
+
+    img{
+        width: 80px;
+        height: 80px;
+        margin-left: 5px;
+        margin-right: 30px;
+        border-radius: 50%;
+    }
+
+    p{
+        padding: 0;
+    }
+
+    h3{
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .fa{
+        color: #f44336
+    }
+}
+
+
+/* Servicios Bis Page */
+
+.serviciosBis{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 60px;
+}
+
+
+/* Servicios Prueba de banner */
+
+
+#services{
+	background-color: #dcdcdc;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 10px;
+	padding-bottom: 40px;
+
+    h1{
+        text-align: center;
+        color: $colorBlack;
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    p{
+        font-size: 14px;
+        margin-top: 20px;
+        color: $colorBlack;
+    }
+
+    .container{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 30px 0;
+
+        .icon{
+            font-size: 40px;
+            margin: 20px auto;
+            padding: 10px;
+            height: 80px;
+            width: 80px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        
+            &:hover{
+                transform: rotate(360deg) scale(1.2);
+                transition: all .5s;
+            }
+        
+            .iconos{
+                margin-top: 17px;
+            }
+        }
+    }
+}
+
+/* Nosotros Page */
+
+.main{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+
+    .nosotrosPage{
+        width: 80%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 5px;
+
+        .nosotrosPage-col{
+            flex-basis: 48%;
+            padding: 20px 2px;
+
+            img{
+                width: 100%;
+            }
+
+            p{
+                padding: 15px 0 25px;
+            }
+        }
+    }
+}
+

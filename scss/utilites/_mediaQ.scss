@@ -1,0 +1,83 @@
+// Medias de Header
+
+@media(max-width: 700px){
+	.cajaTexto h1{
+		font-size: 28px;
+	}
+	.nav-links ul li{
+		display: block;
+		text-align: center;
+	}
+	.nav-links{
+		position: absolute;
+		background: #2f4b6e;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+}
+
+
+
+// Medias del main
+
+@media(max-width: 700px){
+	.contenedor-servicio{
+		display: block;
+		text-align: center;
+	}
+	.checklist-servicio{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.service h3{
+		text-align: center;
+	}
+}
+
+
+
+/* principios Index*/
+
+
+@media(max-width: 700px){
+	.row{
+		flex-direction: column;
+	}
+}
+
+
+/* Call to action */
+
+@media(max-width: 700px){
+	.cta h2{
+		font-size: 20px;
+	}
+}
+
+
+/* Testimonios */
+
+@media(max-width: 700px){
+	.testimonios-col img{
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+}
+
+
+/* Form */
+
+@media(max-width: 700px){
+	.sub-header h1{
+		font-size: 24px;
+	}
+	.commentBox{
+		width: 80%;
+	}
+}
