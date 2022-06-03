@@ -3,7 +3,7 @@
 .header{
 	width: $w-100;
 	min-height: 100vh;
-	background-image: linear-gradient(rgba(113, 138, 197, 0.219),rgba(113, 138, 197, 0.226)),url(../images/principalManos.jpg);
+	background-image: linear-gradient(rgba(113, 138, 197, 0.219),rgba(113, 138, 197, 0.226)),url(../../images/principalManos-1920.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -67,12 +67,12 @@
         
 
     .cajaTexto{
-        overflow: hidden;
-        width: 90%;
-        color: #030303;
-        position: absolute;
-        top: 60%;
-        left: 50%;
+        overflow:map-get($cajaText , overflow );
+        width: map-get($cajaText , width );
+        color: $colorBlack;
+        position: map-get($cajaText , position );
+        top: map-get($cajaText , top );
+        left: map-get($cajaText , left );
         transform: translate(-50%,-50%);
         text-align: center;
 
@@ -83,7 +83,7 @@
         p{
             margin: 10px 0 40px;
             font-size: 16px;
-            color: #030303;
+            color: $colorBlack;
         }
 
         .cajaTexto-btn{
@@ -97,12 +97,10 @@
 /* Sub-Header */
 
 .sub-header{
+    @extend .header;
 	overflow:  hidden;
-	height: 50vh;
-	width: $w-100;
-	background-image: linear-gradient(rgba(231, 234, 241, 0.253),rgba(199, 211, 240, 0.274)),url(../images/principalManos.jpg);
-	background-position: center;
-	background-size: cover;
+	min-height: 50vh;
+	background-image: linear-gradient(rgba(231, 234, 241, 0.253),rgba(199, 211, 240, 0.274)),url(../../images/principalManos-1920.jpg);
 	text-align: center;
 	color: $colorBlack;
 
@@ -128,7 +126,7 @@
                 padding: 30px;
             }
 
-                li{
+                li{ 
                     list-style: none;
                     display: inline-block;
                     padding: 8px 12px;

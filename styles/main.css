@@ -230,17 +230,17 @@
 }
 
 /** Header **/
-.header {
+.header, .sub-header {
   width: 100%;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(113, 138, 197, 0.219)), to(rgba(113, 138, 197, 0.226))), url(../images/principalManos.jpg);
-  background-image: linear-gradient(rgba(113, 138, 197, 0.219), rgba(113, 138, 197, 0.226)), url(../images/principalManos.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(113, 138, 197, 0.219)), to(rgba(113, 138, 197, 0.226))), url(../../images/principalManos-1920.jpg);
+  background-image: linear-gradient(rgba(113, 138, 197, 0.219), rgba(113, 138, 197, 0.226)), url(../../images/principalManos-1920.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.header nav {
+.header nav, .sub-header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,29 +253,29 @@
           align-items: center;
 }
 
-.header nav .nav-links {
+.header nav .nav-links, .sub-header nav .nav-links {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: right;
 }
 
-.header nav .nav-links .fa {
+.header nav .nav-links .fa, .sub-header nav .nav-links .fa {
   display: none;
 }
 
-.header nav .nav-links ul {
+.header nav .nav-links ul, .sub-header nav .nav-links ul {
   padding: 30px;
 }
 
-.header nav .nav-links li {
+.header nav .nav-links li, .sub-header nav .nav-links li {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative;
 }
 
-.header nav .nav-links li::after {
+.header nav .nav-links li::after, .sub-header nav .nav-links li::after {
   content: '';
   width: 0%;
   height: 2px;
@@ -286,24 +286,24 @@
   transition: 0.5s;
 }
 
-.header nav .nav-links li:hover::after {
+.header nav .nav-links li:hover::after, .sub-header nav .nav-links li:hover::after {
   width: 100%;
 }
 
-.header nav .nav-links li a {
+.header nav .nav-links li a, .sub-header nav .nav-links li a {
   color: black;
   text-decoration: none;
   font-size: 15px;
 }
 
-.header nav .fa {
+.header nav .fa, .sub-header nav .fa {
   display: none;
   color: black;
   margin: 10px;
   font-size: 22px;
 }
 
-.header .cajaTexto {
+.header .cajaTexto, .sub-header .cajaTexto {
   overflow: hidden;
   width: 90%;
   color: #030303;
@@ -315,17 +315,17 @@
   text-align: center;
 }
 
-.header .cajaTexto h1 {
+.header .cajaTexto h1, .sub-header .cajaTexto h1 {
   font-size: 60px;
 }
 
-.header .cajaTexto p {
+.header .cajaTexto p, .sub-header .cajaTexto p {
   margin: 10px 0 40px;
   font-size: 16px;
   color: #030303;
 }
 
-.header .cajaTexto .cajaTexto-btn {
+.header .cajaTexto .cajaTexto-btn, .sub-header .cajaTexto .cajaTexto-btn {
   display: inline-block;
   text-decoration: none;
   background: #1A1919;
@@ -336,7 +336,7 @@
   text-transform: uppercase;
 }
 
-.header .cajaTexto .cajaTexto-btn:hover {
+.header .cajaTexto .cajaTexto-btn:hover, .sub-header .cajaTexto .cajaTexto-btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: #fff;
@@ -347,12 +347,9 @@
 /* Sub-Header */
 .sub-header {
   overflow: hidden;
-  height: 50vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 234, 241, 0.253)), to(rgba(199, 211, 240, 0.274))), url(../images/principalManos.jpg);
-  background-image: linear-gradient(rgba(231, 234, 241, 0.253), rgba(199, 211, 240, 0.274)), url(../images/principalManos.jpg);
-  background-position: center;
-  background-size: cover;
+  min-height: 50vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 234, 241, 0.253)), to(rgba(199, 211, 240, 0.274))), url(../../images/principalManos-1920.jpg);
+  background-image: linear-gradient(rgba(231, 234, 241, 0.253), rgba(199, 211, 240, 0.274)), url(../../images/principalManos-1920.jpg);
   text-align: center;
   color: #030303;
 }
