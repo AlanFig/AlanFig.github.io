@@ -25,7 +25,6 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <!-- <a href="/pages/index.html"><img src="" alt=""></a>   Aqui iria el logo -->
             <div class="nav-links animate__animated animate__fadeInDown" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -36,7 +35,39 @@
                     <li><a href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>    
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            <nav class="navbar bg-light fixed-top-right d-block d-lg-none bg-transparent">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <img loading="lazy" src="img/medano.png" alt="logo" width="100px">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </nav>
 
         <div class="cajaTexto">
@@ -55,7 +86,7 @@
         <section class="contenedor" id="servicio">
             <h2 class="subtitulo">Servicios</h2>
             <div class="contenedor-servicio">
-                <img loading="lazy" src="images/people_SVG.svg" alt="" class="img-servicio">
+                <img loading="lazy" src="images/people_SVG.svg" alt="banner-manos" class="img-servicio">
                 <div class="checklist-servicio">
                     <div class="service">
                         <h3 class="n-service"><span class="number">1</span></span>Geolocalización</h3>
@@ -154,7 +185,7 @@
                     <a href="./pages/nosotros.html" class="cajaTexto-btn">Nosotros</a>
                 </div>
                 <div class="nosotros-col">
-                    <img loading="lazy" src="images/imagenChicaDiversidad.png" alt="">
+                    <img loading="lazy" src="images/imagenChicaDiversidad.png" alt="Personas en una pantalla">
                 </div>
             </div>
         </section>
